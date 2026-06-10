@@ -1,0 +1,2 @@
+Cobalt Strike is a command and control framework.
+It is commonly used during post-exploitation activities.

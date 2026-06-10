@@ -1,0 +1,2 @@
+Emotet spreads through phishing emails and malicious attachments.
+Emotet is often used to deliver additional malware.
