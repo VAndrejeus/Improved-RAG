@@ -19,6 +19,17 @@ results = collection.query(
     query_embeddings=[query_embedding],
     n_results=1 # amount of chunks to return
 )
+
+#print all results
+print("\nRetrieved Context:\n")
+print(results["documents"][0][0])
+
+print("\nMetadata:")
+print(results["metadatas"][0][0])
+
+print("\nDistance:")
+print(results["distances"][0][0])
+
 #print retrieved documents
 context = results["documents"][0][0]
 print("\nRetrieved Context:\n")

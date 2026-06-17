@@ -19,7 +19,14 @@ for file in data_folder.glob("*.txt"):
     collection.add(
         documents=[text],
         embeddings=[embedding],
-        ids=[file.stem]
+        ids=[file.stem],
+        metadatas=[             #metadata
+            {
+                "source": file.name,
+                "category": "cti",
+                "year": 2024
+            }
+        ]
 
     )
 
